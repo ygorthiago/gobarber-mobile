@@ -1,6 +1,5 @@
 import styled from 'styled-components/native';
 import { Platform } from 'react-native';
-import { getBottomSpace } from 'react-native-iphone-x-helper';
 
 export const Container = styled.View`
   flex: 1;
@@ -19,9 +18,7 @@ export const Title = styled.Text`
   margin: 24px 0;
 `;
 
-export const UserAvatarButton = styled.TouchableOpacity`
-  /* margin-top: 32px; */
-`;
+export const UserAvatarButton = styled.TouchableOpacity``;
 
 export const UserAvatar = styled.Image`
   width: 186px;
