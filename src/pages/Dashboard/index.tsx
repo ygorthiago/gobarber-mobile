@@ -11,7 +11,6 @@ import {
   UserName,
   ProfileButton,
   UserAvatar,
-  ProviersList,
   ProviderContainer,
   ProviderAvatar,
   ProviderInfo,
@@ -19,6 +18,7 @@ import {
   ProviderMeta,
   ProviderMetaText,
   ProvidersListTitle,
+  ProvidersList,
 } from './styles';
 
 export interface Provider {
@@ -64,7 +64,7 @@ const Dashboard: React.FC = () => {
         </ProfileButton>
       </Header>
 
-      <ProviersList
+      <ProvidersList
         data={providers}
         keyExtractor={provider => provider.id}
         ListHeaderComponent={
