@@ -160,7 +160,7 @@ const SignUp: React.FC = () => {
         });
 
         api.patch('/users/avatar', data).then(apiResponse => {
-          updateUser(apiResponse.data.user);
+          updateUser(apiResponse.data);
         });
       },
     );
